@@ -84,7 +84,7 @@ if (message.content.toLowerCase().startsWith(prefix + "stab")) {
  
   
   if (message.content.toLowerCase().startsWith(prefix + "help")) {
-    message.channel.send(":transparent: \n:m_::a_::j_::i_::m_::a_: :majima3: :f_::a_::m_::i_::l_::y_:\nA bot to help the mods watch over our lovely family! And for stabbing. \n\n:lineblack:   :c_:**ᴏ ᴍ ᴍ ᴀ ɴ ᴅ s**\n:lineblack:   :knife:  [ **`m!stab`** ]  \n:lineblack:   :transparent:  Stab your fellow family members. **Usage:** `m!stab @person`, `m!stab name`\n\n:m_:**ᴇ ᴍ ʙ ᴇ ʀ s**");
+    message.channel.send("<:transparent:454330573029376000> \n<:m_:493288220071559178><:a_:493288218800816129><:j_:493288218960330755><:i_:493288219065057280><:m_:493288220071559178><:a_:493288218800816129> <:majima3:493297211522809866> <:f_:493288218410745858><:a_:493288218800816129><:m_:493288220071559178><:i_:493288219065057280><:l_:493288219530625034><:y_:493288219798929408>\nA bot to help the mods watch over our lovely family! And for stabbing. \n\n<:lineblack:493296997122703360>   <:c_:493295659060035584>**ᴏ ᴍ ᴍ ᴀ ɴ ᴅ s**\n<:lineblack:493296997122703360>   :knife:  [ **`m!stab`** ]  \n<:lineblack:493296997122703360>   <:transparent:454330573029376000>  Stab your fellow family members. **Usage:** `m!stab @person`, `m!stab name`\n\n<:m_:493288220071559178>**ᴇ ᴍ ʙ ᴇ ʀ s**");
     message.channel.sendEmbed(NISHIDA2);
     message.channel.sendEmbed(MINAMI2);
 
