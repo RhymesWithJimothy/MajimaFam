@@ -97,7 +97,12 @@ if (message.content.toLowerCase().startsWith(prefix + "stab")) {
    
   }
   
-  
+    if (message.content.toLowerCase().startsWith(prefix + "minami")) {
+    message.channel.send("<:tr:493314078635458590> \n<:m:493288220071559178><:i:493288219065057280><:n:493298132172406795><:a:493288218800816129><:m:493288220071559178><:i:493288219065057280> <:minami:493309446903037962>\nMinami is the Junior Leader of the Majima Family. \nHe is a loyal man who will fight and give his all for his family and boss.\nHe is in charge of Karaoke <:microphones:492922149703647232> \n\n<:linepink:493307589535465472>   <:c_:493295659060035584>**ᴏ ᴍ ᴍ ᴀ ɴ ᴅ s**\n<:linepink:493307589535465472>   :speech_balloon:    [ **`hey minami`** ]\n<:linepink:493307589535465472>   <:tr:493314078635458590>  Interact with Minami! He answers to:\n<:linepink:493307589535465472>   <:tr:493314078635458590>  <:smallcheck:462358803434700811> **`lizard`** Sends a picture of a lizard!\n<:linepink:493307589535465472>   <:tr:493314078635458590>  <:smallcheck:462358803434700811> Sentences that end in **`?`**\n<:linepink:493307589535465472>   <:tr:493314078635458590>  <:smallcheck:462358803434700811> Certain keywords like **`I love you`**");
+    
+
+
+  }
   
   
 
