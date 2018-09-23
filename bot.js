@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
   console.log('I am ready!');
-  bot.user.setPresence({ game: { name: 'Majima Anthem 🚧', type: 0 } })
+  bot.user.setPresence({ game: { name: '[m!help]', type: 0 } })
 });
 
 const prefix ="m!"
