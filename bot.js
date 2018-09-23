@@ -78,7 +78,7 @@ if (message.content.toLowerCase().startsWith(prefix + "stab")) {
   const MINAMI2 = new Discord.RichEmbed()
   .setColor("0x36393F")
   .setAuthor("M I N A M I  南大作")
-  .setDescription("Talk to <@&472561280906166273>  by typing [ **`hey minami`** ] in the chat.\nTo get help with Minami's commands type [ **`m!minami`** ].")
+  .setDescription("Talk to <@&472561280906166273>  by typing [ **`hey minami`** ] in the chat.\nTo get help with Minami's commands type [  **`m!minami`**  ]")
   .setThumbnail("https://media.discordapp.net/attachments/461288149247852559/493266266115670026/bcfc2c42060284b1b678bf8ddb1e2d6a.png");  
  
  
