@@ -71,7 +71,7 @@ if (message.content.toLowerCase().startsWith(prefix + "stab")) {
   const NISHIDA2 = new Discord.RichEmbed()
   .setColor("0xFBFF7D")
   .setAuthor("N I S H I D A  西田")
-  .setDescription("Talk to <@&4462409281719762954> by typing [ **`hey nishida`** ] in the chat.\nTo get help with Nishida's commands type [ **`m!nishida`** ]")
+  .setDescription("Talk to <@&462409281719762954> by typing [ **`hey nishida`** ] in the chat.\nTo get help with Nishida's commands type [ **`m!nishida`** ]")
   .setThumbnail("https://media.discordapp.net/attachments/461288149247852559/493266242036039680/c2b6529310b7a694834a16007e3c52f2.png");
 
 
