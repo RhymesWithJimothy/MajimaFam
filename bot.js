@@ -92,7 +92,26 @@ if (message.content.toLowerCase().startsWith(prefix + "stab")) {
   }  
   
   
-  
+  if (message.content.toLowerCase().startsWith(prefix + "nishida")) {
+    message.channel.send("<:transparent:462456796498624512> \
+    <:n_:493298132172406795><:i_:493288219065057280><:s_:493298132369539113><:h_:493298132034125854><:i_:493288219065057280><:d_:493298131706970112><:a_:493288218800816129> <:nishi:493303757027934209><:da:493303756834865168> \
+    Nishida is Majima's right-eye man and also his personal errand boy. \
+    He's the best at keeping peace in the Majima Family.\
+    He is in charge of greeting new people to our server! :yellow_heart: \
+    \
+    <:line:462136569894273025>   <:c:493295659060035584>**ᴏ ᴍ ᴍ ᴀ ɴ ᴅ s**\
+    <:line:462136569894273025>   :speech_balloon:  [ **`hey nishida`** ]\
+    <:line:462136569894273025>   <:tr:493314078635458590>  Interact with Nishida! He answers to:\
+    <:line:462136569894273025>   <:tr:493314078635458590>  <:smallcheck:462358803434700811> Sentences that end in **`?`**\
+    <:line:462136569894273025>   <:tr:493314078635458590>  <:smallcheck:462358803434700811> Certain keywords like **`I love you`**\
+    <:line:462136569894273025>   <:tr:493314078635458590> \
+    <:line:462136569894273025>   <:call:485968129831469071>  [ **`hey nishida call kiryu`** ]\
+    <:line:462136569894273025>   <:tr:493314078635458590>  Calls Kiryu and lets you interact with him.\
+    <:line:462136569894273025>   <:tr:493314078635458590>  This is a work in progress. Kiryu answers to:\
+    <:line:462136569894273025>   <:tr:493314078635458590>  <:smallcheck:462358803434700811> **`selfie`** Kiryu sends you a selfie\
+    <:line:462136569894273025>   <:tr:493314078635458590>  <:smallcheck:462358803434700811> Certain keywords like **`I love you`**");
+   
+  }
   
   
   
