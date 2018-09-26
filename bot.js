@@ -121,7 +121,7 @@ if (message.content.toLowerCase().startsWith(prefix + "stab")) {
     if (message.content.toLowerCase().startsWith(prefix + "majima")) {
 
 
-        var command= message.cleanContent.replace("m!majima ", "")
+        var command= message.cleanContent.toLowerCase().replace("m!majima ", "")
         
         if(command.includes('y0')) {
             if (command.includes('cutscene')) {
