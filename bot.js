@@ -8,7 +8,19 @@ bot.on('ready', () => {
 });
 
 const prefix ="m!"
-
+var { y0, y0cut, cinderella } = require('./screenshots/y0');
+var { y1 } = require('./screenshots/y1');
+var { y2 } = require('./screenshots/y2');
+var { y3 } = require('./screenshots/y3');
+var { y4 } = require('./screenshots/y4');
+var { y5 } = require('./screenshots/y5');
+var { y6 } = require('./screenshots/y6');
+var { kiwami } = require('./screenshots/kiwami');
+var { kiwami2 , majisaga } = require('./screenshots/kiwami2');
+var { deadsouls, gettothetop } = require('./screenshots/deadsouls');
+var { ishin } = require('./screenshots/ishin');
+var { kenzan } = require('./screenshots/kenzan');
+var { online, movie, play } = require('./screenshots/misc');
 
 bot.on('message', message => {
   if(message.author.bot)return;
@@ -84,7 +96,7 @@ if (message.content.toLowerCase().startsWith(prefix + "stab")) {
  
   
   if (message.content.toLowerCase().startsWith(prefix + "help")) {
-    message.channel.send("<:transparent:454330573029376000> \n<:m_:493288220071559178><:a_:493288218800816129><:j_:493288218960330755><:i_:493288219065057280><:m_:493288220071559178><:a_:493288218800816129> <:majima3:493297211522809866> <:f_:493288218410745858><:a_:493288218800816129><:m_:493288220071559178><:i_:493288219065057280><:l_:493288219530625034><:y_:493288219798929408>\nA bot to help the mods watch over our lovely family! And for stabbing. \n\n<:lineblack:493296997122703360>   <:c_:493295659060035584>**ᴏ ᴍ ᴍ ᴀ ɴ ᴅ s**\n<:lineblack:493296997122703360>   :knife:  [ **`m!stab`** ]  \n<:lineblack:493296997122703360>   <:transparent:454330573029376000>  Stab your fellow family members. **Usage:** `m!stab @person`, `m!stab name`\n\n<:m_:493288220071559178>**ᴇ ᴍ ʙ ᴇ ʀ s**");
+    message.channel.send("<:transparent:454330573029376000> \n<:m_:493288220071559178><:a_:493288218800816129><:j_:493288218960330755><:i_:493288219065057280><:m_:493288220071559178><:a_:493288218800816129> <:majima3:493297211522809866> <:f_:493288218410745858><:a_:493288218800816129><:m_:493288220071559178><:i_:493288219065057280><:l_:493288219530625034><:y_:493288219798929408>\nA bot to help the mods watch over our lovely family! And for stabbing. \n\n<:lineblack:493296997122703360>   <:c_:493295659060035584>**ᴏ ᴍ ᴍ ᴀ ɴ ᴅ s**\n<:lineblack:493296997122703360>   :knife:  [ **`m!stab`** ]  \n<:lineblack:493296997122703360>   <:transparent:454330573029376000>  Stab your fellow family members. **Usage:** `m!stab @person`, `m!stab name`\n<:lineblack:493296997122703360>\n<:lineblack:493296997122703360>   <:a_goro_runner:488584508594192394>  [ **`m!majima`**]\n<:lineblack:493296997122703360>   <:transparent:454330573029376000>  Sends a random Majima picture!\n<:lineblack:493296997122703360>   <:transparent:454330573029376000>  **Tags:** `y0`, `24h cinderella`, `y1`, `y2`, `y3`, `y4`, `y5`, `y6`,\n<:lineblack:493296997122703360>   <:transparent:454330573029376000>  `kiwami`, `kiwami 2`, `ishin`, `kenzan`, `dead souls`, \n<:lineblack:493296997122703360>   <:transparent:454330573029376000>  `get to the top`, `movie`, `online`, `stage play`\n<:lineblack:493296997122703360>   \n<:transparent:454330573029376000>  **Usage:** `m!majima [ tag ]`\n\n<:m_:493288220071559178>**ᴇ ᴍ ʙ ᴇ ʀ s**");
     message.channel.sendEmbed(NISHIDA2);
     message.channel.sendEmbed(MINAMI2);
 
@@ -103,13 +115,286 @@ if (message.content.toLowerCase().startsWith(prefix + "stab")) {
 
 
   }
+
+
+
+    if (message.content.toLowerCase().startsWith(prefix + "majima")) {
+
+
+        var command= message.cleanContent.replace("m!majima ", "")
+        
+        if(command.includes('y0')) {
+            if (command.includes('cutscene')) {
+                message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: y0cut[Math.floor(Math.random()*y0cut.length)]},
+                    footer: {text: "© 龍が如く0 ┃ Yakuza 0"}}}
+                );
+            } else {    var yakuza0 = [ y0[Math.floor(Math.random()*y0.length)],
+                        y0cut[Math.floor(Math.random()*y0cut.length)],
+                        cinderella[Math.floor(Math.random()*cinderella.length)] ]
+
+                    message.channel.send(
+                        {embed: {color: 0x36393F,
+                        image: {url: yakuza0[Math.floor(Math.random()*yakuza0.length)]},
+                        footer: {text: "© 龍が如く0 ┃ Yakuza 0"}}}
+                        );  }
+        } 
+
+        else if (command.includes('y1')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                image: {url: y1[Math.floor(Math.random()*y1.length)]},
+                footer: {text: "© 龍が如く1 ┃ Yakuza 1 "}}}
+            );
+        }
+
+        else if (command.includes('y2')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: y2[Math.floor(Math.random()*y2.length)]},
+                    footer: {text: "© 龍が如く2 ┃ Yakuza 2 "}}}
+                );
+        }  
+
+        else if (command.includes('y3')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: y3[Math.floor(Math.random()*y3.length)]},
+                    footer: {text: "© 龍が如く3 ┃ Yakuza 3 "}}}
+                );
+        } 
+
+        else if (command.includes('y4')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: y4[Math.floor(Math.random()*y4.length)]},
+                    footer: {text: "© 龍が如く4 ┃ Yakuza 4 "}}}
+                );
+        } 
+
+        else if (command.includes('y5')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: y5[Math.floor(Math.random()*y5.length)]},
+                    footer: {text: "© 龍が如く5 ┃ Yakuza 5 "}}}
+                );
+        }     
+
+        else if (command.includes('y6')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: y6[Math.floor(Math.random()*y6.length)]},
+                    footer: {text: "© 龍が如く6 ┃ Yakuza 6 "}}}
+                );
+        }  
+
+        
+        else if (command.includes('kiwami 2')) {
+            if (command.includes('cutscene')) {
+                message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: kiwami2[Math.floor(Math.random()*kiwami2.length)]},
+                    footer: {text: "© 龍が如く極2 ┃ Yakuza Kiwami 2"}}}
+                );
+            } else {    var yakuza2 = [ kiwami2[Math.floor(Math.random()*kiwami2.length)],
+                        majisaga[Math.floor(Math.random()*majisaga.length)] ]
+
+                    message.channel.send(
+                        {embed: {color: 0x36393F,
+                        image: {url: yakuza2[Math.floor(Math.random()*yakuza2.length)]},
+                        footer: {text: "© 龍が如く極2 ┃ Yakuza Kiwami 2"}}}
+                        );  }
+        } 
+
+        else if (command.includes('kiwami')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: kiwami[Math.floor(Math.random()*kiwami.length)]},
+                    footer: {text: "© 龍が如く極 ┃ Yakuza Kiwami "}}}
+                );
+        } 
+
+        else if (command.includes('dead')) {
+        message.channel.send('get to the top!');
+
+            if (command.includes('cutscene')) {
+                    message.channel.send(
+                    {embed: {color: 0x36393F,
+                        image: {url: deadsouls[Math.floor(Math.random()*deadsouls.length)]},
+                        footer: {text: "© 龍が如くOTE ┃ Yakuza Dead Souls"}}}
+                    );
+            } else {    var ded = [ deadsouls[Math.floor(Math.random()*deadsouls.length)],
+                            gettothetop[Math.floor(Math.random()*gettothetop.length)] ]
+
+                        message.channel.send(
+                            {embed: {color: 0x36393F,
+                            image: {url: ded[Math.floor(Math.random()*ded.length)]},
+                            footer: {text: "© 龍が如くOTE ┃ Yakuza Dead Souls"}}}
+                            );  }
+        }  
+
+        else if (command.includes('ishin')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: ishin[Math.floor(Math.random()*ishin.length)]},
+                    footer: {text: "© 龍が如く 維新!  ┃ Yakuza Ishin"}}}
+                );
+        }  
+        
+        else if (command.includes('kenzan')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: kenzan[Math.floor(Math.random()*kenzan.length)]},
+                    footer: {text: "© 龍が如く 見参!  ┃ Yakuza Kenzan"}}}
+                );
+        } 
+        
+        
+        else if (command.includes('get')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: gettothetop[Math.floor(Math.random()*gettothetop.length)]},
+                    footer: {text: "© 龍が如くOTE ┃ Yakuza Dead Souls"}}}
+                );
+        } 
+
+ 
+        else if (command.includes('24')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                image: {url: cinderella[Math.floor(Math.random()*cinderella.length)]},
+                footer: {text: "© 龍が如く0 ┃ Yakuza 0 "}}}
+            );
+        }  
+
+        else if (command.includes('movie')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: movie[Math.floor(Math.random()*movie.length)]},
+                    footer: {text: "© 龍が如く：劇場版 ┃ Like A Dragon Movie "}}}
+                );
+        }
+
+        else if (command.includes('online')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: online[Math.floor(Math.random()*online.length)]},
+                    footer: {text: "© 龍が如くONLINE ┃ Yakuza Online "}}}
+                );
+        }
+
+        else if (command.includes('play')) {
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                    image: {url: play[Math.floor(Math.random()*play.length)]},
+                    footer: {text: "© 龍が如く舞台 ┃ Yakuza Stage Play "}}}
+                );
+        }
+
+        else 
+        {
+
+            var randomjima = [  y0[Math.floor(Math.random()*y0.length)],
+                                y0cut[Math.floor(Math.random()*y0cut.length)],
+                                cinderella[Math.floor(Math.random()*cinderella.length)],
+                                y0[Math.floor(Math.random()*y0.length)],
+                                y0cut[Math.floor(Math.random()*y0cut.length)],
+                                cinderella[Math.floor(Math.random()*cinderella.length)],
+                                y0[Math.floor(Math.random()*y0.length)],
+                                y0cut[Math.floor(Math.random()*y0cut.length)],
+                                cinderella[Math.floor(Math.random()*cinderella.length)],
+                                y1[Math.floor(Math.random()*y1.length)],
+                                y2[Math.floor(Math.random()*y2.length)],
+                                y3[Math.floor(Math.random()*y3.length)],
+                                y4[Math.floor(Math.random()*y4.length)],
+                                y5[Math.floor(Math.random()*y5.length)],
+                                y6[Math.floor(Math.random()*y6.length)],
+                                kiwami[Math.floor(Math.random()*kiwami.length)],
+                                kiwami[Math.floor(Math.random()*kiwami.length)],
+                                kiwami[Math.floor(Math.random()*kiwami.length)],
+                                kiwami[Math.floor(Math.random()*kiwami.length)],
+                                kiwami[Math.floor(Math.random()*kiwami.length)],
+                                kiwami2[Math.floor(Math.random()*kiwami2.length)],
+                                majisaga[Math.floor(Math.random()*majisaga.length)],
+                                deadsouls[Math.floor(Math.random()*deadsouls.length)],
+                                gettothetop[Math.floor(Math.random()*gettothetop.length)],
+                                deadsouls[Math.floor(Math.random()*deadsouls.length)],
+                                gettothetop[Math.floor(Math.random()*gettothetop.length)],
+                                deadsouls[Math.floor(Math.random()*deadsouls.length)],
+                                gettothetop[Math.floor(Math.random()*gettothetop.length)],
+                                deadsouls[Math.floor(Math.random()*deadsouls.length)],
+                                gettothetop[Math.floor(Math.random()*gettothetop.length)],
+                                ishin[Math.floor(Math.random()*ishin.length)],
+                                kenzan[Math.floor(Math.random()*kenzan.length)],
+                                online[Math.floor(Math.random()*online.length)],
+                                movie[Math.floor(Math.random()*movie.length)],
+                                play[Math.floor(Math.random()*play.length)] ]
+
+            var randomtext = [  "© 龍が如く0 ┃ Yakuza 0 ",
+                                "© 龍が如く0 ┃ Yakuza 0 ",
+                                "© 龍が如く0 ┃ Yakuza 0 ",
+                                "© 龍が如く0 ┃ Yakuza 0 ",
+                                "© 龍が如く0 ┃ Yakuza 0 ",
+                                "© 龍が如く0 ┃ Yakuza 0 ",
+                                "© 龍が如く0 ┃ Yakuza 0 ",
+                                "© 龍が如く0 ┃ Yakuza 0 ",
+                                "© 龍が如く0 ┃ Yakuza 0 ",
+                                "© 龍が如く1 ┃ Yakuza 1 ",
+                                "© 龍が如く2 ┃ Yakuza 2 ",
+                                "© 龍が如く3 ┃ Yakuza 3 ",
+                                "© 龍が如く4 ┃ Yakuza 4 ",
+                                "© 龍が如く5 ┃ Yakuza 5 ",
+                                "© 龍が如く6 ┃ Yakuza 6 ",
+                                "© 龍が如く極 ┃ Yakuza Kiwami ",
+                                "© 龍が如く極 ┃ Yakuza Kiwami ",
+                                "© 龍が如く極 ┃ Yakuza Kiwami ",
+                                "© 龍が如く極 ┃ Yakuza Kiwami ",
+                                "© 龍が如く極 ┃ Yakuza Kiwami ",
+                                "© 龍が如く極2 ┃ Yakuza Kiwami 2",
+                                "© 龍が如く極2 ┃ Yakuza Kiwami 2",
+                                "© 龍が如くOTE ┃ Yakuza Dead Souls",
+                                "© 龍が如くOTE ┃ Yakuza Dead Souls",
+                                "© 龍が如くOTE ┃ Yakuza Dead Souls",
+                                "© 龍が如くOTE ┃ Yakuza Dead Souls",
+                                "© 龍が如くOTE ┃ Yakuza Dead Souls",
+                                "© 龍が如くOTE ┃ Yakuza Dead Souls",
+                                "© 龍が如くOTE ┃ Yakuza Dead Souls",
+                                "© 龍が如くOTE ┃ Yakuza Dead Souls",
+                                "© 龍が如く 維新!  ┃ Yakuza Ishin",
+                                "© 龍が如く 見参!  ┃ Yakuza Kenzan",
+                                "© 龍が如くONLINE ┃ Yakuza Online ",
+                                "© 龍が如く：劇場版 ┃ Like A Dragon Movie ",
+                                "© 龍が如く舞台 ┃ Yakuza Stage Play" ]                    
+
+            var randonumber = Math.floor(Math.random()*randomjima.length)
+
+            message.channel.send(
+                {embed: {color: 0x36393F,
+                image: {url: randomjima[randonumber]},
+                footer: {text: randomtext[randonumber]}}}
+                );  
+                         
+       
+        }  
+
+    }   
+
+
+
+
+
+
+
+
+
+
+
+
   
   
 
 });
-
-
-
 
 
 
