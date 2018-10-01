@@ -61,6 +61,15 @@ if(message.content.toLowerCase().startsWith( [prefix + 'say'] )){
         message.guild.channels.get('449101348537892865').send( "@everyone\n" + newannounce);
         }
     }
+  
+  
+  if(message.content.toLowerCase().startsWith( [prefix + 'pic'] )){
+    if (message.member.roles.find("name", "Officer")) { 
+      var newp=message.content.replace("m!pic ", "")
+      message.channel.send({files: [newp]});
+    }
+  } 
+
     
  
  
