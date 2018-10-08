@@ -74,7 +74,7 @@ if(message.content.toLowerCase().startsWith( [prefix + 'say'] )){
         
             setTimeout(function () {
                 message.guild.channels.get('496120793634439178').send(mensaje);
-        message.guild.channels.get('496120793634439178').send( "<@496117506499674113>");
+        message.guild.channels.get('496120793634439178').send( "<@&496117506499674113>");
               }, 1000);
              } )
             
