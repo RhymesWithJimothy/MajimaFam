@@ -63,6 +63,25 @@ if(message.content.toLowerCase().startsWith( [prefix + 'say'] )){
     }
   
   
+   if (message.content.toLowerCase().startsWith("m!event ")) {
+        if (message.member.roles.find("name", "Officer")) { 
+        var newme=message.content.replace("m!event ", "")
+        const args = newme.split(' ');
+        const mensaje = args.slice(1).join(' ');
+        message.guild.channels.get('496120793634439178').send({files: [args[0]]})
+
+        .then(msg => { 
+        
+            setTimeout(function () {
+                message.guild.channels.get('496120793634439178').send(mensaje);
+        message.guild.channels.get('496120793634439178').send( "<@496117506499674113>");
+              }, 1000);
+             } )
+            
+        }
+    }
+  
+  
   if(message.content.toLowerCase().startsWith( [prefix + 'pic'] )){
     if (message.member.roles.find("name", "Officer")) { 
       var newp=message.content.replace("m!pic ", "")
