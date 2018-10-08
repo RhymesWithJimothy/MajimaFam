@@ -68,13 +68,13 @@ if(message.content.toLowerCase().startsWith( [prefix + 'say'] )){
         var newme=message.content.replace("m!event ", "")
         const args = newme.split(' ');
         const mensaje = args.slice(1).join(' ');
-        message.guild.channels.get('496120793634439178').send({files: [args[0]]})
+        message.guild.channels.get('495360243547766794').send({files: [args[0]]})
 
         .then(msg => { 
         
             setTimeout(function () {
-                message.guild.channels.get('496120793634439178').send(mensaje);
-        message.guild.channels.get('496120793634439178').send( "<@&496117506499674113>");
+                message.guild.channels.get('495360243547766794').send(mensaje);
+        message.guild.channels.get('495360243547766794').send( "<@&496117506499674113>");
               }, 1000);
              } )
             
